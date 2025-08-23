@@ -1,5 +1,13 @@
 # Repair Fiducia-PDF
 
+The script was originally created because I suspected that the display problem was caused by Fiduca not embedding the PDF fonts.
+
+Later, *cweiske* discovered that the [issue](https://github.com/FabKre/repair_fiducia-pdf/issues/1) was actually due to bugs in *poppler/fontconfig*, which have since been fixed.
+
+As a result, the script is no longer needed, but it remains online as an archive in case anyone finds parts of it useful.
+
+## General information about the script
+
 Shell-Script to repair fiducia-pdf-file (font embedded incorrectly) using qpdf and basic unix tools.
 
 Fiducia is a financial service provider for german Volksbank. They do not embed fonts in generated documents anymore. Futhermore those fonts do not exists, thus those pdfs are rendered ugly in evince (and other viewers using poppler). Font substitution in evince is done correctly and they state "works on my machine".
